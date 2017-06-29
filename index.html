@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Philosopher" rel="stylesheet">
   <style>
     .gallery {display:none;}
@@ -14,6 +13,9 @@
       color: #aaaaaa;
       text-decoration: none;
     }
+div {
+  padding: 25px;
+  text-align: center;
 h1 {
   font-family: 'Cinzel Decorative', serif;
   width: 100%;
@@ -65,11 +67,11 @@ p {
   <h2>Custom Tiny Homes</h2>
   <h4> About               Products               Gallery               Blog               Contact</h4>
 <div class="slideshow" style="max-width:500px">
-  <img class="gallery" src="img1.jpg" style="width:100%">
-  <img class="gallery" src="img2.jpg" style="width:100%">
-  <img class="gallery" src="img3.jpg" style="width:100%">
-  <img class="gallery" src="img4.jpg" style="width:100%">
-  <img class="gallery" src="img5.jpg" style="width:100%">
+  <img class="gallery w3-animate-fading" src="img1.jpg" style="width:100%">
+  <img class="gallery w3-animate-fading" src="img2.jpg" style="width:100%">
+  <img class="gallery w3-animate-fading" src="img3.jpg" style="width:100%">
+  <img class="gallery w3-animate-fading" src="img4.jpg" style="width:100%">
+  <img class="gallery w3-animate-fading" src="img5.jpg" style="width:100%">
 </div>
 <script>
 var slideIndex = 0;
@@ -84,7 +86,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000);
+    setTimeout(carousel, 9000);
 }
   </script>
   </body>
